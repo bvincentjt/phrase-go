@@ -5,7 +5,7 @@ type TranslationUpdateParameters struct {
 	// specify the branch to use
 	Branch string `json:"branch,omitempty"`
 	// Translation content
-	Content string `json:"content,omitempty"`
+	Content *string `json:"content,omitempty"`
 	// Plural suffix. Can be one of: zero, one, two, few, many, other. Must be specified if the key associated to the translation is pluralized.
 	PluralSuffix string `json:"plural_suffix,omitempty"`
 	// Indicates whether translation is unverified. Part of the <a href=\"https://help.phrase.com/help/verification-and-proofreading\" target=\"_blank\">Advanced Workflows</a> feature.
